@@ -12,6 +12,8 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   /* it will center allign the items */
+  flex-direction: column;
+  /*it will align elements in column    */
   align-items: center;
   /* it will also center allign the elements */
   justify-content: center;
@@ -21,6 +23,21 @@ body {
   margin: 0;
 
 
+}
+/* designing translator */
+.goog-logo-link {
+  display:none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  color: black !important;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-size: 15px;
+  padding: 10px 6px;
 }
 
 

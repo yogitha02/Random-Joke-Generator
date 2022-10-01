@@ -1,6 +1,7 @@
 const jokeEl = document.getElementById('joke');          // div id = joke        
 const get_joke = document.getElementById('get_joke');    // button id = get_joke 
-
+const body = document.querySelector("body");
+const toggle = document.querySelector(".toggle");
 get_joke.addEventListener('click', generateJoke);
 generateJoke();                                          
 
@@ -19,4 +20,9 @@ async function generateJoke(){  // async makes a function return a Promise
  
     jokeEl.innerHTML = joke.joke;    
 }
+toggle.addEventListener("click", () => {
+    body.classList.toggle("dark")
+      ? (toggle.firstElementChild.className = "far fa-moon")
+      : (toggle.firstElementChild.className = "far fa-sun");
+  });
 

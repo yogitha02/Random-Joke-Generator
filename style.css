@@ -62,6 +62,48 @@ h3 {
 }
 
 
+  .toggle {
+    width: 4rem;
+    height: 4rem;
+    background-color: #b9ec91;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: rgba(135, 240, 87, 0.89) 0px 25px 50px -12px;
+    cursor: pointer; }
+
+    .toggle i {
+      font-size: 2rem;
+      color: #777; }
+/* Dark mode styling*/
+      body.dark {
+        background-color: #262626;
+        color: #ffffff; 
+      }
+       body.dark .container {
+          background-color: rgb(21, 29, 29);
+          box-shadow: 0 10px 20px rgba(231, 228, 228, 0.925), 0 6px 6px rgba(0,0, 0, 0, 0.1);
+          
+      }
+
+        body.dark .toggle {
+          background-color: #323232;
+          box-shadow: rgba(33, 34, 33, 0.89) 0px 25px 50px -12px;
+        }
+
+          body.dark .toggle i {
+            color: #ffffff; }
+            
+            body.dark .btn { 
+              background-color: rgb(99, 94, 94);
+              box-shadow: 0 5px 15px rgba(255, 253, 253, 0.774), 0 6px 6px rgba(0,0, 0, 0, 0.1);
+              color: #fff;
+            }
+
+
 
 
 

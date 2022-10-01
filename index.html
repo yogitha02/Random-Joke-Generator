@@ -14,6 +14,21 @@
     <!-- Link CSS -->
   </head>
   <body>
+    <!-- added language translator -->
+    <div class="language">
+      <div class="google_translate_element" id="google_translate_element"></div>
+      <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+              {pageLanguage: 'en'},
+              'google_translate_element'
+          );
+      }
+      </script>
+      <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+          
+          </script>
+    </div>
     <div class="container">
       <div class="toggle" id="toggle">
         <!-- to switch between light and dark mode-->
